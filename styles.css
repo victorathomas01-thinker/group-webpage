@@ -51,15 +51,19 @@ header nav button:hover {
 }
 
 /* Card styling for individual team bios */
+/* Edited base card style to match Victor's for cohesion */
 .card {
-    background: white;
+    background: linear-gradient(150deg, #232234, #29234b 64%, #1d2034);
+    color: #f9f7ff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 22px rgba(20, 17, 40, .23);
     margin: 10px;
     padding: 20px;
     flex: 1 1 calc(30% - 40px);
     text-align: center;
     transition: transform 0.2s;
+    border: 2px solid #f26419;
+    min-height: 380px;
 }
 .card1 {
     background: orange;
@@ -84,7 +88,6 @@ h2 {
 .bio {
     display: none;
     margin-top: 10px;
-    color: #555;
 }
 
 /* Button styling */
@@ -149,4 +152,37 @@ button:hover {
 @media (max-width: 700px) {
     .container { width: 94%; }
     .card { flex: 1 1 100%; }
+}
+
+.martha-avatar {
+    max-width: 200px;
+}
+
+.bio {
+    text-align: left;
+    line-height: 1.65;
+}
+
+.preston-avatar {
+    max-width: 200px;
+}
+
+.martha-moodboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+}
+
+.martha-moodboard > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 5px);
+}
+
+.mood-logo {
+max-width: 80px;
+}
+
+.moodboard-title {
+    text-align: center;
 }
