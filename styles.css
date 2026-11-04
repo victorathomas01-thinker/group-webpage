@@ -1,14 +1,14 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Anta, sans-serif;
+    background-color: #D0D2DC;
     margin: 0;
     padding: 0;
 }
 
 /* Header section styling */
 header {
-    background: #333;
+    background: #301d9a;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -26,17 +26,18 @@ header nav {
 }
 
 header nav button {
-    background: #007BFF;
+    background: #F26419;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     margin: 0 5px;
+    font-family: inherit;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #AE430A;
 }
 
 /* Flex container for team bios and vision sections */
@@ -46,6 +47,7 @@ header nav button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 /* Card styling for individual team bios */
@@ -77,14 +79,15 @@ h2 {
 
 /* Button styling */
 button {
-    background: #007BFF;
+    background: #F26419;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: inherit;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #AE430A;
 }
