@@ -38,11 +38,24 @@
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Preston is one of the main people of the project and wants to one day make his own games.</p>
     </div>
-    <div class="card">
+    <!-- Victor's individual profile and CS moodboard. Avatar uses the user's original uploaded cartoon image. -->
+    <div class="card victor-card">
+        <img class="victor-avatar" src="img/victor-avatar.webp" alt="Victor's chosen cartoon avatar featuring two characters" loading="lazy">
         <h2>Victor Thomas</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <p class="victor-role">UI/UX Designer</p>
+        <p class="victor-tagline">Computer Science · Games · AI · Design</p>
+        <button onclick="toggleBio('bio3')" aria-controls="bio3">Show Bio &amp; Moodboard</button>
+        <div id="bio3" class="bio victor-details">
+            <p>I'm a Computer Science student interested in software development, AI, and game design. I like building things I can actually use and figuring out how to make technology feel better for the people using it. Two projects I've worked on are Tasteprint, a recommendation app, and a Marvel Rivals match tracker. I'm hoping to keep getting better at both the technical and creative sides of development.</p>
+            <h3>My CS Moodboard</h3>
+            <div class="victor-moodboard" aria-label="Victor's computer science inspiration board">
+                <a class="mood-tile" href="https://www.unrealengine.com/" target="_blank" rel="noopener noreferrer"><span class="mood-icon" aria-hidden="true">🎮</span><strong>Game development</strong><small>Unreal Engine &amp; interactive worlds</small></a>
+                <a class="mood-tile" href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><span class="mood-icon" aria-hidden="true">🐍</span><strong>Python</strong><small>Building and experimenting</small></a>
+                <a class="mood-tile" href="https://www.tensorflow.org/" target="_blank" rel="noopener noreferrer"><span class="mood-icon" aria-hidden="true">🧠</span><strong>Artificial intelligence</strong><small>Smarter, more responsive software</small></a>
+                <a class="mood-tile" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer"><span class="mood-icon" aria-hidden="true">🎨</span><strong>UI/UX design</strong><small>Making things easier to use</small></a>
+            </div>
+            <p class="victor-links">Check out my work on <a href="https://github.com/victorathomas01-thinker" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        </div>
     </div>
 </div>
 

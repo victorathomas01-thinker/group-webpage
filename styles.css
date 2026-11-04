@@ -101,3 +101,52 @@ button {
 button:hover {
     background: #AE430A;
 }
+
+
+/* Victor's individual card. Other members' styles stay unchanged. */
+.victor-card {
+    background: linear-gradient(150deg, #232234, #29234b 64%, #1d2034);
+    color: #f9f7ff;
+    border: 2px solid #f26419;
+    box-shadow: 0 8px 22px rgba(20, 17, 40, .23);
+}
+.victor-avatar {
+    width: min(100%, 300px);
+    aspect-ratio: 1100 / 730;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 17px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: #141321;
+}
+.victor-role { margin: 6px 0; font-weight: bold; color: #ffa56e; }
+.victor-tagline { color: #dad6f9; font-size: .85em; line-height: 1.5; }
+.victor-details { text-align: left; color: #f4f2ff; line-height: 1.65; }
+.victor-details h3 { text-align: center; margin: 23px 0 12px; }
+.victor-moodboard { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.mood-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 94px;
+    padding: 12px 8px;
+    background: rgba(255,255,255,.09);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.24);
+    border-radius: 9px;
+    text-decoration: none;
+}
+.mood-tile:hover, .mood-tile:focus-visible { background: rgba(242,100,25,.24); outline-color: #ffa56e; }
+.mood-icon { font-size: 1.8rem; }
+.mood-tile strong { font-size: .89em; }
+.mood-tile small { color: #ddd9f8; font-size: .73em; line-height: 1.3; }
+.victor-links { text-align: center; }
+.victor-links a { color: #ffb078; }
+@media (max-width: 700px) {
+    .container { width: 94%; }
+    .card { flex: 1 1 100%; }
+}
